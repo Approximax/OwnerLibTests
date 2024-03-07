@@ -21,6 +21,7 @@ public class SimpleTest {
 
         Configuration.browser = webConfig.getBrowser();
         Configuration.browserVersion = webConfig.version();
+        Configuration.remote = webConfig.remoteUrl();
 
         System.setProperty("environment", System.getProperty("environment", "local"));
     }

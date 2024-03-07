@@ -12,4 +12,8 @@ public interface WebConfig extends Config {
     @Key("version")
     @DefaultValue("97.0")
     String version();
+
+    @Key("remote")
+    @DefaultValue("127.0.0.1")
+    String remoteUrl();
 }
