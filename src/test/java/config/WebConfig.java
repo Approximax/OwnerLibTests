@@ -10,7 +10,7 @@ public interface WebConfig extends Config {
     String getBrowser();
 
     @Key("version")
-    @DefaultValue("97.0")
+    @DefaultValue("122.0")
     String version();
 
     @Key("remote")

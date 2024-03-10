@@ -17,7 +17,7 @@ public class SimpleTest {
 
     @BeforeAll
     static void beforeAll() {
-        System.setProperty("environment", System.getProperty("environment", "local-driver"));
+        System.setProperty("env", System.getProperty("env", "local"));
 
         WebConfig webConfig = ConfigFactory.create(WebConfig.class);
 
