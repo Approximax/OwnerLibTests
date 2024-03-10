@@ -6,7 +6,7 @@ import org.aeonbits.owner.Config;
 public interface WebConfig extends Config {
 
     @Key("browser")
-    @DefaultValue("opera")
+    @DefaultValue("firefox")
     String getBrowser();
 
     @Key("version")
@@ -14,6 +14,6 @@ public interface WebConfig extends Config {
     String version();
 
     @Key("remote")
-    @DefaultValue("127.0.0.1")
+    @DefaultValue("")
     String remoteUrl();
 }

@@ -17,18 +17,18 @@ public class SimpleTest {
 
     @BeforeAll
     static void beforeAll() {
+        System.setProperty("environment", System.getProperty("environment", "local-driver"));
+
         WebConfig webConfig = ConfigFactory.create(WebConfig.class);
 
         Configuration.browser = webConfig.getBrowser();
         Configuration.browserVersion = webConfig.version();
         Configuration.remote = webConfig.remoteUrl();
-
-        System.setProperty("environment", System.getProperty("environment", "local"));
     }
 
     @Test
     @Tag("example")
-    void SimpleTest() {
+    void simpleTest() {
         SelenideElement banner = $(".fc-consent-root");
 
         open("https://demoqa.com/text-box");
